@@ -39,3 +39,10 @@ This project draws inspiration and borrows some code from the following open-sou
 - [kdb-common](https://github.com/BuaBook/kdb-common) by [BuaBook](https://github.com/BuaBook)
 
 Many thanks to the authors and contributors of these libraries for their work.
+
+## Notice
+
+Copyright (c) 2026 KX Systems, Inc.
+
+Licensed under the Apache License, Version 2.0.
+

@@ -129,4 +129,9 @@ t"HDB should not log trace as level wasn't set for it"
 .hdb.f[];
 
 s"completed tests"
+
+.log.info (".z.k %r";.z.k)
+
+@[h;"exit 0";{x}];
+
 exit 0;
