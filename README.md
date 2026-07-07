@@ -31,6 +31,10 @@ This project is a logging module that KX will provide open source and out of the
 
 :point_right: [`Install guide`](docs/install.md)
 
+## Conda package
+
+For information on how to build and host a conda package see [`Conda usage`](https://github.com/KxSystems/qmamba/wiki/Build)
+
 ## Acknowledgements
 
 This project draws inspiration and borrows some code from the following open-source projects:
