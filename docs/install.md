@@ -25,7 +25,7 @@ Move `log.q` into your module directory, under `kx`. The following example assum
 
 ```bash
 mkdir -p ~/.kx/mod/kx
-cp test.q ~/.kx/mod/kx/
+cp log.q ~/.kx/mod/kx/
 ```
 
 
