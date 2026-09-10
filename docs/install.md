@@ -4,6 +4,19 @@
 
 [`.log.q`](../log.q) depends on the [`printf`](https://github.com/KxSystems/printf) library from KX and assumes it is a sibling of `log.q`
 
+## Install module with qmamba
+
+qmamba is a package manager for kdb-x. It is currently available in a private preview capacity. You are welcome to try it and provide feedback.
+Follow the install instructions for [qmamba](https://github.com/KxSystems/qmamba/blob/main/README.md#installation).
+
+```q
+qmamba:use`kx.qmamba
+qmamba.create "myenv"
+qmamba.activate "myenv"
+qmamba.install `SPECS`CHANNEL!(enlist "q-kx-log";enlist"kx")
+.logger:use`kx.log
+```
+
 ## Installing a Release
 
 It is recommended that a user install this module through a release. 
@@ -33,6 +46,13 @@ cp log.q ~/.kx/mod/kx/
 
 Now from anywhere you can import the logging library.
 
+If you are using qmamba, you'll first need to activate the environment you installed the logging module
+```q
+qmamba:use`kx.qmamba
+qmamba.activate "myenv"
+```
+
+Load the module
 ```q
 q).logger:use`kx.log;
 q).log:.logger.createLog[];
