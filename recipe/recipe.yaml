@@ -1,5 +1,5 @@
 context:
-  version: "1.0.1"
+  version: ${{ env.get("PKG_VERSION", default="0.0.0") }}
 
 package:
   name: q-kx-log
@@ -21,6 +21,20 @@ build:
 requirements:
   run:
     - q-kx-printf
+
+about:
+  homepage: https://github.com/KxSystems/logging
+  repository: https://github.com/KxSystems/logging
+  documentation: https://github.com/KxSystems/logging/blob/main/docs/reference.md
+  license: Apache-2.0
+  license_file: LICENSE
+  summary: Logging capabilities for KDB-X applications.
+  description: |
+    Provides logging capabilities for KDB-X applications, loaded as the
+    kx.log module. Supports six log levels (trace, debug, info, warn, error,
+    fatal), multiple sinks (STDOUT/STDERR, file handles, qIPC), and multiple
+    formats (syslog, json, basic) with format customisation and variable
+    logging.
 
 tests:
   - script:
