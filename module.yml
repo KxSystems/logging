@@ -1,0 +1,24 @@
+name: q-kx-log
+description: >-
+  Provides logging capabilities for KDB-X applications.
+homepage: https://github.com/KxSystems/logging
+namespace: kx.log
+
+source:
+  repo: https://github.com/KxSystems/logging
+  version: 1.0.0
+  path: .
+
+license: Apache-2.0
+
+maintainers:
+  - github: KxSystems
+
+platforms:
+  - linux
+  - linux-arm
+  - mac
+  - mac-arm
+
+compatibility:
+  kdbx: ">=5.0.0"
